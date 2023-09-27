@@ -1,14 +1,9 @@
-"""
-Main module for the physiciststoolkit package, with internal functions.
-"""
-# Import the modules here
+"""All data analysis functions go here."""
 import numpy as np
-import matplotlib.pyplot as plt
 from scipy.optimize import curve_fit
 from uncertainties import ufloat
 
-# Define the functions here
-def auto_fit(func, datax, datay, p_0 = None):
+def auto_lsq_fit(func, datax, datay, p_0 = None):
     """A fire-and-forget function to fit any data to any function.
         Produces a list of fit parameters, the fit function, the residual,
         and the reduced chi square value.
@@ -40,4 +35,4 @@ def auto_fit(func, datax, datay, p_0 = None):
 
     return fit_params, result_func, residual, chi_sq
 
-
+def 
