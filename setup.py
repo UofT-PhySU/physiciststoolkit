@@ -1,3 +1,4 @@
+"""Script for setting this up as a package. INCOMPLETE. """
 from setuptools import setup
 import codecs
 import os

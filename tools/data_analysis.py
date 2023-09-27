@@ -34,5 +34,3 @@ def auto_lsq_fit(func, datax, datay, p_0 = None):
     chi_sq = np.sum((residual/func_fit)**2)/(len(datay) - len(params))
 
     return fit_params, result_func, residual, chi_sq
-
-def 
